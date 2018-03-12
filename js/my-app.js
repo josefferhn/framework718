@@ -3,19 +3,28 @@ var myApp = new Framework7({
 	// Default title for modals
 	root:'#app',
 	theme: 'md',
-   	view:{
-		xhrCache:false,
-		pushState:true
+    view: {
+    	xhrCache: false,
+    	pushState: false,
+    	uniqueHistory: true,
 	},
-	dialog:{
-		title:'Framework7'
+	panel: {
+		swipe: 'left',
 	},
+	dialog: {
+    	title: 'FrameWork7 DW2',
+  	},
 	routes: [
 		{
-		path: '/about/',
-    	url: 'about.html',
-    	name: 'about',
-  		}
+			path: '/about/',
+			url: 'about.html',
+			name: 'about',
+  		},
+		{
+			path: '/peliculas/',
+			url: 'mas-peliculas.html',
+			name: 'peliculas',
+		}
 	]
     // ... other parameters
 });

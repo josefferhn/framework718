@@ -1,132 +1,137 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <title>Framework7</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/framework7.min.css" rel="stylesheet">
-<link href="css/framework7.md.min.css" rel="stylesheet">
-<link href="css/material-icons.css" rel="stylesheet"> 
-<link href="css/style.css" rel="stylesheet">
 
+<link href="css/framework7.md.min.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">	
 </head>
 
-<body>
+<body class="color-theme-blue">
+<div id="app">
 
-	<div id="app">
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
-	  <section class="panel panel-left">
-    		
-    		<div class="block">
-				<p>Informaciòn Panel Izquierdo</p>
-		  	</div>
-    			
-	  </section>
+    <div class="statusbar"></div>
+    <div class="panel panel-left panel-reveal">
+      <div class="block">
+        <div class="content-block-inner">
+        	<ul>
+				<li><b>Fernando Ramos</b></li>
+				<li>jframos@unitec.edu</li>
+			</ul>
+		</div>
      
-     
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+      </div>
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Framework7</div>
-              <div class="right">
-				  
-				  <a href="#" class="link panel-open" data-panel="left">
-          	  		<i class="icon material-icons">menu</i>
-          	  	  </a>
-           	  </div>
-            </div>
-          </div>
+    </div>
 
-
-
-          <!-- Scrollable page content -->
-          <section class="page-content">
-            
-            <article class="block">
-            	
-            	<div class="block-title">
-            		Listas
+      <div class="view view-main view-init">
+		<div class="page" >
+			<div class="navbar">
+			  <div class="navbar-inner">
+				<div class="title">FrameWork7 App</div>
+				<div class="right">
+				  <a href="#" class="link icon-only panel-open" data-panel="left"><i class="icon material-icons md-only">menu</i></a>
 				</div>
-           		
-           		<div class="list">
-           			<ul>
-           				<li class="item-content">
-           					<div class="item-inner">
-           						Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum 
+			  </div>
+			</div>
+			
+			<section class="page-content">
+				<div class="block">
+					<p>Page content goes here</p>
+				 	<div class="list links-list">
+						<ul>
+						  <li>
+							<a href="/about/" class="item-link">Enlace a Página</a>
+						  </li>
+						  <li>
+							<a href="/peliculas/" class="item-link">Películas</a>
+						  </li>
+						 </ul>
+					</div>
+				</div>
+				
+				<!-- Link to another page -->
+				<div class="block-title">
+					Lista
+				</div>
+				<div class="list">
+					<ul>
+						<li class="item-content">
+							<div class="item-media">
+								<i class="material-icons">menu</i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">
+									List element title
+								</div>
+								<div class="item-after">
+									List element label
+								</div>
 							</div>
 						</li>
 						<li class="item-content">
-           					<div class="item-inner">
-           						<div class="item-title">
-           							Tìtulo de la Lista
-								</div>
-								<div class="item-after">
-									Contenido derecha
-									<span class="badge color-red">10</span>
-								</div>
-							</div>  
-						</li>
-						<li class="item-content">
+							<div class="item-media">
+								<i class="material-icons">menu</i>
+							</div>
 							<div class="item-inner">
 								<div class="item-title">
 									<div class="item-header">
-										Encabezado
+										List element title
 									</div>
-									Texto de Contenido
 									<div class="item-footer">
-										Resumen
+										List element label
 									</div>
 								</div>
-							</div>
-						</li>
-						<li class="item-content media-list">
-							<div class="item-inner">
-								<div class="item-title-row">
-									<div class="item-title">
-										Juan Josè
-									</div>
-								</div>
-								<div class="item-subtitle">
-									Lic. Comunicaciòn
-								</div>
-								<div class="item-text">
-									Experiencia en estrategìa y comunicaciòn
-								</div>
+
 							</div>
 						</li>
 						<li>
 							<a href="#" class="item-link item-content">
+								
 								<div class="item-media">
 									<i class="material-icons">link</i>
 								</div>
 								<div class="item-inner">
-									Texto de contenido
+									Enlace
 								</div>
 							</a>
 						</li>
+						<li class="item-content media-list">
+							<div class="item-media">
+								<img src="img/coco.jpg" width="80">
+							</div>
+							<div class="item-inner">
+								<div class="item-title-row">
+									<div class="item-title">
+										Coco
+									</div>
+								</div>
+								<div class="item-subtitle">
+									2017 (Doblada)
+								</div>
+								<div class="item-text">
+								Es una película estadounidense dirigida por Lee Unkrich inspirada en la festividad mexicana del Día de Muertos, producida por Pixar y distribuida por Walt Disney Pictures
+								</div>
+
+							</div>
+						</li>
+					
 					</ul>
-				</div>
-            
-			</article>
-            
-            
-            
-          </section>
-          
-        </div>
-      </div>
-    </div>
+					</div>
+					
+			</section>
 
+		</div><!-- page -->
 
+	</div><!-- view -->
 
-	<script src="js/framework7.min.js"></script>
-	<script src="js/my-app.js"></script>
+</div><!-- #app -->
+	
 
+<script src="js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
 </body>
 </html>
